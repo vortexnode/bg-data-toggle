@@ -148,7 +148,7 @@ fun Content() {
             (query.isBlank() || it.label.contains(query, true) || it.pkg.contains(query, true))
     }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("Фоновые данные") }) }) { pad ->
+    Scaffold(topBar = { TopAppBar(title = { Text("Мобильные фоновые данные") }) }) { pad ->
         Column(Modifier.padding(pad)) {
             if (shizuku == 0) {
                 Banner("Shizuku не запущен. Запусти его и вернись сюда.", "Проверить") { check() }
